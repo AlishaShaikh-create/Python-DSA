@@ -68,4 +68,4 @@ print('banana' in fruits)
 # Bitwise operator 
 # & (and) | (or) ^(XOR) ~ (not) <<(left shift) >>(right shift)
 
-print(6 & 3) 
+print(6 & 3) # output: 2
