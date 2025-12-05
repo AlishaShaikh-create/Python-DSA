@@ -88,5 +88,57 @@ del a[1]
 print(a) #output : [1, 3, 4, 5]
 
 # -> the del keyword even can delete the complete list
+
+
 # del a
 # print(a) # NameError: name 'a' is not defined
+
+
+#Looping through the list 
+
+thislist=['apple', 'mango','banana', 'grapes']
+for x in thislist:
+    print(x)
+
+for i in thislist[2:5]:
+    print(i)    
+    
+for i in range(len(thislist)):
+    print(thislist[i])    
+    
+z=0
+while z < len(thislist):
+    print(thislist[z])   
+    z+=1 
+    
+    
+# list compreshension    
+thislist = ["apple", "banana", "cherry"]
+[print(x) for x in thislist  ]
+
+# fruits that contain letter a in the list  and keep it in the new list 
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"] 
+newarr=[]
+for i in range(len(fruits)):
+    if 'a' in fruits[i]:
+        newarr.append(fruits[i])
+print(newarr)
+
+# shorter version to do this
+
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+
+newlist = [x for x in fruits if "a" in x]
+
+print(newlist)
+
+
+#sort the list in alphabetically and in ascending order
+a=[103,20,3320,440]
+a.sort()
+print(a)
+
+
+# to sort in descending order
+a.sort(reverse=True)
+print(a)
