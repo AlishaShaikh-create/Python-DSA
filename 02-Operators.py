@@ -57,3 +57,15 @@ print(a is b ) # output : True -> memory refer to the same object
 
 c=[1,2,3]
 print(a is c) # output : False -> return false because the memory reference to different object    
+
+
+#membership operator 
+# in , not in
+fruits = ['apple', 'banana' , 'grapes']
+print('banana' in fruits)
+
+
+# Bitwise operator 
+# & (and) | (or) ^(XOR) ~ (not) <<(left shift) >>(right shift)
+
+print(6 & 3) 
