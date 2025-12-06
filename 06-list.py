@@ -142,3 +142,21 @@ print(a)
 # to sort in descending order
 a.sort(reverse=True)
 print(a)
+
+#sort the function according to the customization
+def sortFun(n):
+    return abs(n-50)
+
+mylist=[10,50,100,300]
+mylist.sort(key=sortFun)
+print(mylist)
+
+# reverse the current order of the list 
+mylist.reverse()
+print(mylist)
+
+
+#copying the items in the list 
+a=[1,2,3]
+b=a.copy()
+print(b)
