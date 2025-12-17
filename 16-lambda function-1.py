@@ -49,3 +49,41 @@ people=[
 
 name=list((map(get_name, people)))
 print(name)
+
+
+# filter function
+
+def even(n):
+    if n%2==0:
+        return True
+    
+lst=[1,2,3,4,5,6,7,8,9,10,11,12]
+even_number=list(filter(even,lst))  
+print(even_number)  
+
+
+
+# filter with the lambda function
+lst1=[1,2,3,4,5,6,7,8,9,10,11,12]
+greater=list(filter(lambda x:x>5 , lst1))
+print(greater)
+
+
+# filter with a lambda function and multiple condition
+num=[1,2,3,4,5,6,7,8,9,10,11,12]
+even_and_greater=list(filter(lambda x: x>5 and x%2==0, num))
+print(even_and_greater)
+
+# filter with dict
+
+people=[
+    {"name": "Alisha", "age":24},
+    {"name": "Peter", "age":25},
+    {"name": "neha", "age":30},
+    {"name": "jack", "age":45}
+]
+def greater_age(person):
+    return person['age']>25
+
+age=tuple((filter(greater_age,people)))
+print(age)
