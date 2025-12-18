@@ -12,6 +12,9 @@ def sum(number):
 
 print(sum([1,2,3,4,5,6,7]))    
 print(sum([]))    
-        
 
+# lambda function takes 2 parameter the  function and 2nd one is iterable
+from functools import reduce
+total = reduce(lambda x,y : x+y, [1,2,3,4,5,6])
+print(total)
     
