@@ -20,3 +20,12 @@ def generate_square(n):
 generate_square(5)
 generate_square(3)
 generate_square(1)
+
+
+#square pattern
+n=3
+for i in range(0,n):
+    string=""
+    for j in range (0,n):
+        string+="*"
+    print(string)
