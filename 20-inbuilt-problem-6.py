@@ -10,3 +10,4 @@ def count_even_odd(lst):
     return tuple((even_count,odd_count))        
 
 print(count_even_odd([1,2,3,4,5,6]))
+
