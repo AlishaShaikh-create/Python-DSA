@@ -93,6 +93,8 @@ name1()
 
 print(type(y))
 
+
+# type() to find out the type of variable it is stored
 x=1j
 print(x)
 print(type(x))
