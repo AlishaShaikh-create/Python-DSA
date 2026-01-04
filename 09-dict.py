@@ -97,3 +97,5 @@ for x in thisdict:
 # to print the value
 for i in thisdict:
   print(thisdict[i])  
+  
+ # the value of the dictionary 
