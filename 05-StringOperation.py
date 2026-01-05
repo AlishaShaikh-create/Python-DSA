@@ -34,11 +34,12 @@ print ("alisha" not in x)  # output : True
 b="Hello World!"
 print(b[2:7])
 
+
 # negative indexing 
 
 z = "Hello, World!"
 print(z[-5:-2])
-
+# output: orl
 
 #String Methods
 
@@ -58,3 +59,13 @@ txt=f" my name is Alisha and age is {age}"
 print(txt)
 
 
+# split : 
+name=" peter  parker "
+print(name.split(","))  # here since  there is no comma in the name string the the name will get return as a single element as the list
+
+name=" peter , parker "
+print(name.split(","))
+
+lst=name.split(',')
+print(lst)
+print(lst[0])
