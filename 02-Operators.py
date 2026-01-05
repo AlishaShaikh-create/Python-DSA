@@ -75,3 +75,20 @@ print(10 =='10')
 print(10 != '10')
 
 
+x = 3
+print(x << 1) # Output: 6 (binary 0011 shifted left becomes 0110)
+
+x = 5
+print(x << 2) # Output: 20 (binary 0101 shifted left becomes 10100)
+
+x = 4
+x <<= 3
+print(x)
+
+
+x = 8
+print(x >> 1) # Output: 4 (binary 1000 shifted right becomes 0100)
+
+x = 20
+print(x >> 2)
+# Output: 5 (binary 10100 shifted right becomes 00101)
