@@ -69,3 +69,9 @@ print('banana' in fruits)
 # & (and) | (or) ^(XOR) ~ (not) <<(left shift) >>(right shift)
 
 print(6 & 3) # output: 2
+
+
+print(10 =='10')
+print(10 != '10')
+
+
