@@ -100,3 +100,12 @@ print(x)
 print(type(x))
 
 
+# revision 
+y="hello"
+def greet():
+    global y
+    y="hi"
+    print(y)
+
+greet()
+print(type(y))
