@@ -28,6 +28,7 @@ a[1:3]=["alisha" , True]
 print(a) #output : [10, alisha, True , 40]
 
 # Note: The length of the list will change when the number of items inserted does not match the number of items replaced.
+
 thislist = ["apple", "banana", "cherry"]
 thislist[1:3] = ["watermelon"]
 print(thislist) #output: ['apple', 'watermelon']
@@ -61,12 +62,25 @@ print(thislist)
 
 
 # REMOVING ITEMS FROM THE LIST 
+# it does not return anything 
 
 
 #remove
 a = [10, 20, 30 , 40 , 50]
-a.remove(20)
+a.remove(20) 
 print(a)
+
+# removing the element using the iterators
+print("Removing the element form the list using the remove()")
+for i in a[:]:
+    a.remove(i)
+    print(a)
+# output :
+# [30, 40, 50]
+# [40, 50]
+# [50]
+# []    
+
 
 # a.remove(100)
 # print(a)  # output : ValueError: list.remove(x): x not in list
@@ -76,7 +90,7 @@ print(a)
 # -> return the deleted element 
 # -> if index is not given the delete the last element
 
-print(a.pop(0)) #output : 10
+# print(a.pop(0)) #output : 10
 
 print(a)  #output: [30, 40, 50]
 
