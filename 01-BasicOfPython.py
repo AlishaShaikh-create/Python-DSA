@@ -100,12 +100,13 @@ print(x)
 print(type(x))
 
 
-# revision 
-y="hello"
-def greet():
-    global y
-    y="hi"
-    print(y)
+#local vs Global variable
+a='alisha'
+def name():
+    # global b
+    b = 'shaikh'
+    print(b)
+    
 
-greet()
-print(type(y))
+name()
+# print(b)  //NameError: print the error that the b is not defined
