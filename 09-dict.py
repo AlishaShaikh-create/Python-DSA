@@ -73,6 +73,7 @@ print(thisdict)
 thisdict.pop('year')
 print(thisdict)
 # 2 popitem()
+
 # remove the last items 
 thisdict.popitem()
 print(thisdict)

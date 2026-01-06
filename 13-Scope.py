@@ -16,7 +16,7 @@ print("This is global variable",x)
 def myfunc1():
   x = "Jane"
   def myfunc2():
-    nonlocal x
+    nonlocal x  # -> this  make variable to work with the outer function 
     x = "hello"
   myfunc2()
   return x
