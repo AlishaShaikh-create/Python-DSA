@@ -75,3 +75,13 @@ s2={1,2,'a'}
 s3=s1.symmetric_difference(s2)
 print(s3)
 # output: {1, 2, 'b', 'c'}
+
+
+# frosenset
+#  in frozenset you cannot add or delete the element unlike set 
+f1 = frozenset({1,2,3})
+print(f1)  # output : frozenset({1, 2, 3})
+
+f2= frozenset([1,2,3])
+print(f2)   # frozenset({1, 2, 3})
+print(type(f2)) # <class 'frozenset'>
