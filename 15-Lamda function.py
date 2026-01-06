@@ -39,3 +39,14 @@ print(map(lambda x:x**2, numbers))
 
 list1=list((map(lambda x:x**2, numbers)))
 print(list1)
+
+
+def myfunction(n):
+    return lambda a:a*n
+
+value=myFunction(2)
+print(value)  
+
+# output: <function myFunction.<locals>.<lambda> at 0x7f291ddd5440>
+
+print(value(11))
