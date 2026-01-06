@@ -87,3 +87,11 @@ print(t3)
 
 t4=t1*2
 print(t4)
+
+
+print(True == 1)
+# output: True
+count = 0
+x=11
+count += (x > 10)  
+print(count)
