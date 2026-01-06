@@ -1,4 +1,5 @@
-# SET :
+# SET : unordered ; immutable ; do not allow duplicate 
+# in set you can add or delete the items but u cannot change the items 
 # add() : To add one item to the set 
 s1={1,2,3}
 print(s1)
@@ -20,10 +21,11 @@ print(s1)
 # print(s1)
 
 
-#discard()
+#discard() -> does not raise the error if element does not exist
 s1={1,2,3}
 s1.discard(2)
 print(s1)
+
 
 s1.discard(2)
 print(s1)
@@ -49,8 +51,9 @@ print(s3)
 
 s3=s1|s2
 print(s3)
-
-#Intersection  &
+# output : {1,2,3,'a' , 'b' ,'c'}
+    
+#Intersection  & -> gives the common element in both the sets
 
 s1={'a','b','c'}
 s2={1,2,'a'}
@@ -64,3 +67,11 @@ s1={'a','b','c'}
 s2={1,2,'a'}
 s3= s1.difference(s2)
 print(s3)
+
+# Symmetric_difference -> remove the common element and give the remaining element from both the sets
+s1={'a','b','c'}
+s2={1,2,'a'}
+
+s3=s1.symmetric_difference(s2)
+print(s3)
+# {1, 2, 'b', 'c'}
