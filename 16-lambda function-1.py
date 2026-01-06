@@ -5,6 +5,12 @@
 #Syntax 
 # map(function , iterable)
 
+l1=[1,2,3]
+l2=[]
+for i in l1:
+    i=i**2
+    l2.append(i)
+print(l2)    
 
 def square(n):
     return n**2
