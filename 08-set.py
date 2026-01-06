@@ -74,4 +74,4 @@ s2={1,2,'a'}
 
 s3=s1.symmetric_difference(s2)
 print(s3)
-# {1, 2, 'b', 'c'}
+# output: {1, 2, 'b', 'c'}
