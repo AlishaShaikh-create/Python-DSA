@@ -1,26 +1,5 @@
-# def searchRange(nums, target):
-#     # Implement your solution here
-#     target_index=0
-#     n=len(nums)
-#     lst =[]
-#     start , end = 0 , n-1
-#     while(start <= end):
-#         mid = (start + end ) // 2
-#         if nums[mid] == target:
-#             target_index = mid 
-#             ele = target
-#             lst.insert(0,target_index)
-#             while(ele != target):
-#                 target_index = target_index+1 
-#             lst.insert(1,target_index)
-#         if nums[mid] < target:
-#             start = mid + 1 
-#         if nums[mid] > target:
-#             end = mid -1 
-#     return lst        
+#  https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/
 
-# nums=[5, 7, 7, 8, 8, 10]
-# print(searchRange(nums,8))     
 
 def searchRange(nums, target):
     def findFirst(nums, target):
