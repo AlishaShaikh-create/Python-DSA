@@ -1,3 +1,5 @@
+# Rotate the list
+
 def rotate_left(ARR, D):
     """
     Function to rotate the list to the left by D positions.
