@@ -1,3 +1,5 @@
+# Given a list of integers, determine if it is a palindrome. A list is considered a palindrome if it reads the same forward and backward.
+
 
 def is_palindrome(lst):
     """
@@ -15,5 +17,11 @@ def is_palindrome(lst):
             end=end-1
         else:
             return False
-    return True        
-    
+    return True  
+
+      
+lst = [7, 8, 9, 8, 7]
+print(is_palindrome(lst))
+
+lst = [1,2,3,4,5]
+print(is_palindrome(lst))
