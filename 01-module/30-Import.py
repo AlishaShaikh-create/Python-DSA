@@ -50,3 +50,29 @@ print(os.getcwd())  # -> gives me the current working directory
 # to copy the file from source to destination
 import shutil
 shutil.copyfile("newFile.txt","destination.txt")
+
+
+# Data serialixation : Mainly used in the api  where we need to convert data in the json format
+import json
+data={"name": "Alisha" , "roll_number":"5M0"}
+new_data=json.dumps(data)  # it convert the  data into the string format 
+print(new_data)
+#output: {"name": "Alisha", "roll_number": "5M0"}
+print(type(new_data))
+# output:<class 'str'>
+parsed_data=json.loads(new_data)
+print(parsed_data)
+#output: {'name': 'Alisha', 'roll_number': '5M0'}
+print(type(parsed_data))
+# output: <class 'dict'>
+
+
+# import csv
+import csv
+with open('example.txt', mode='w',newline='')as file:
+    writer=csv.writer(['name','age'])
+    writer=csv.writer(['krish',23])
+
+with open('example.txt' , mode='r')as file:
+    for rows in file:
+        print(rows)
