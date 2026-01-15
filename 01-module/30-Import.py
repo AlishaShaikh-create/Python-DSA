@@ -70,8 +70,9 @@ print(type(parsed_data))
 # import csv
 import csv
 with open('example.txt', mode='w',newline='')as file:
-    writer=csv.writer(['name','age'])
-    writer=csv.writer(['krish',23])
+    writer=csv.writer(file)
+    writer.writerow(['name','age'])
+    writer.writerow(['krish',23])
 
 with open('example.txt' , mode='r')as file:
     for rows in file:
