@@ -50,6 +50,9 @@ with open('example.txt','a') as file:
     file.writelines(lines)
 
 
+# Binary Files:
+
+
 
     
     
