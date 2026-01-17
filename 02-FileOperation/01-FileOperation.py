@@ -68,7 +68,20 @@ with open('example.txt','r') as file:
 with open ('destination.txt', 'w') as file:
     file.write(content)    
 
-    
+
+# Counting the lines words and the number of character in the line
+
+def count(filePath):
+    with open(filePath,'r') as file:
+        lines=file.readlines()
+        line_count=len(lines)
+        word_count=sum(len(line.split()) for line in lines)
+        char_count=sum(len(line) for line in lines)
+    return line_count, word_count, char_count
+
+filepath='example.txt'
+lines,words,char=count(filepath)  
+print(lines,words,char)      
     
 
         
