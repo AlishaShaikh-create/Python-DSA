@@ -96,6 +96,28 @@ with open("example.txt", 'w+') as file:
      content = file.read()
      print(content)
      
-         
 
+# creating a new directory
+
+import os
+# os.mkdir("new_directory")
+# print("The new directory is created")     
+
+
+# Listing Files And 
+items=os.listdir('.')
+print(items)
+
+
+# Joining Paths
+dir_name='folder'
+file_name="file.txt"
+full_path=os.path.join(dir_name,file_name)
+print(full_path)
+
+         
+dir_name='folder'
+file_name="file.txt"
+full_path=os.path.join(os.getcwd(),dir_name,file_name)
+print(full_path)
         
