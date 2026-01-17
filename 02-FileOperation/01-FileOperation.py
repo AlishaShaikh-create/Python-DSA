@@ -84,4 +84,18 @@ lines,words,char=count(filepath)
 print(lines,words,char)      
     
 
+
+# w+ mode : 
+with open("example.txt", 'w+') as file:
+     file.write("Hello world \n")
+     file.write("This is the second line \n")
+
+     # Move the file cursor to the beginning
+     file.seek(0)
+     
+     content = file.read()
+     print(content)
+     
+         
+
         

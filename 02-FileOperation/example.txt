@@ -1,5 +1,2 @@
-Hello World 
-Hi there 
-Append opention taking place in example fileFirst line 
-second line 
-Third line
+Hello world 
+This is the second line 
