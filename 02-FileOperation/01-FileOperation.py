@@ -50,9 +50,23 @@ with open('example.txt','a') as file:
     file.writelines(lines)
 
 
-# Binary Files:
+# Binary Files: 
+# WRITE MODE
+data = b'/x00/x01'
+with open ('example.bin','wb') as file:
+    file.write(data)
 
+# READ MODE :
+with open('example.bin', 'rb') as file :
+    print(file.read())   
+    
 
+# read the content from the source and then  write it into the destination file
+
+with open('example.txt','r') as file:
+    content=file.read()
+with open ('destination.txt', 'w') as file:
+    file.write(content)    
 
     
     
