@@ -1,4 +1,5 @@
-Hello i am example.txt file 
-This file is only for the understanding purpose
-I does not contain any code 
-You can write what ever u want to write here
+Hello World 
+Hi there 
+Append opention taking place in example fileFirst line 
+second line 
+Third line

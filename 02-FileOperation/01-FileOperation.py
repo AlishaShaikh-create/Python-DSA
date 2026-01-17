@@ -1,4 +1,5 @@
 # Reading the file 
+# read mode
 with open("example.txt",'r') as file:
     content=file.read()
     print(content)
@@ -28,9 +29,28 @@ with open("example.txt" , 'r') as file:
 # You can write what ever u want to write here
 
 
-
+#WRITE MODE
 # writing the content into the file overwriting the content
-        
+with open("example.txt", 'w') as file:
+    file.write("Hello World \n")        
+    file.write("Hi there \n")
+    
+# Output: The content in the example.txt will get changed
+
+
+# APPEND MODE
+# writing into the file without overwriting
+
+with open("example.txt",'a') as file:
+    file.write("Append opention taking place in example file")
+
+# writing a list of lines to a file
+lines=['First line \n' , 'second line \n' , 'Third line\n']
+with open('example.txt','a') as file:
+    file.writelines(lines)
+
+
+
     
     
 
