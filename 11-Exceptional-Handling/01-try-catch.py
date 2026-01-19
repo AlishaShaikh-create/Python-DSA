@@ -48,5 +48,22 @@ except ZeroDivisionError:
 except Exception as e:
     print(e)      
 
-    
+
+#try,except,else block
+# Without else, everything inside try is treated as “risky”, even code that logically should not be.
+
+# The else block execute only if the error is not present
+try:
+    num=int(input("Enter the number:"))
+    result=10/num
+  
+except ValueError:
+    print("This is not a valid error")            
+except ZeroDivisionError:
+    print(" The number cannot be divided by zero")  
+except Exception as e:
+    print(e)
+else :
+      print(result)    
+     
      
