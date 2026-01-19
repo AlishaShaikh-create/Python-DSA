@@ -10,4 +10,7 @@ finally:
      if 'file' in locals() and not file.closed():
          file.close()
          print('file closed')
+         
+
+         
             
