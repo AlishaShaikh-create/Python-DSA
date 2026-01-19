@@ -65,5 +65,28 @@ except Exception as e:
     print(e)
 else :
       print(result)    
+
+
+# try ,except ,  else  and finally
+# finally : finally block exceute even if the error occured or not
+try:
+    num=int(input("Enter the number:"))
+    result=10/num
+  
+except ValueError:
+    print("This is not a valid error")            
+except ZeroDivisionError:
+    print(" The number cannot be divided by zero")  
+except Exception as e:
+    print(e)
+else :
+      print(result)    
+finally:
+    print("Exccution completed")           
+    
+# output: 
+# Enter the number:23
+# 0.43478260869565216
+# Exccution completed   
      
      
