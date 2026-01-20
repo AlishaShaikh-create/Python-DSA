@@ -85,7 +85,7 @@ print(b1.get_balance())
 
 # deleting the object :
 del Dog1      
-print(Dog1.name)
+# print(Dog1.name)
 
  # Class Properties Vs Instance Properties
 class Person:
@@ -117,4 +117,17 @@ print(p1.age)
 print(p1.city)
 
 # Note : adding property this way only add the property to the specific object
+
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+  def __str__(self):
+    return f"{self.name} ({self.age})"
+
+p1 = Person("Tobias", 36)
+print(p1)
+
+
 
