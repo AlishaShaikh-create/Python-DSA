@@ -41,5 +41,48 @@ Dog1.bark()
 dog2 =Dog("Lucy",4)
 dog2.bark()       
 
+#Creating the class
+# Creating the bank balance 
+class Bank:
+    # constructor
+    def __init__(self,owner,balance=0):
+        self.owner=owner
+        self.balance=balance
+    
+    def deposite(self,amount):
+        self.balance+=amount
+        print(f"{amount} has been deposited. New balance is {self.balance}")    
+    
+    def withdraw(self, amount):
+        if amount > self.balance:
+            print("Insufficient Funds")    
+        else :
+            self.balance-=amount
+            print(f"{amount} has been withdrawn. New balanace is {self.balance}")    
 
+    def get_balance(self):
+        return self.balance
+
+b1=Bank("Alisha")
+print(b1)
+print(b1.balance)
+print(b1.owner)
+b1.deposite(5000)
+b1.withdraw(6000)
+b1.withdraw(2000)
+print(b1.get_balance())
+
+# Output : 
+# <__main__.Bank object at 0x7f55bcc72d80>
+# 0
+# Alisha
+# 5000 has been deposited. New balance is 5000
+# Insufficient Funds
+# 2000 has been withdrawn. New balanace is 3000
+# 3000
+# alisha           
+            
+        
+        
+        
 
