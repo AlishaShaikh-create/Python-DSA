@@ -64,3 +64,31 @@ circle=Circle(3)
 
 print_area(rectangle)
 print_area(circle)
+
+#polymorphism with abstract base classes
+# Abstract Base classes are used to define the methods for a group of the related objects. They can enforce that derived classe implements particular methods , promoting consistency 
+
+from abc import ABC,abstractmethod
+# Define an abstract class
+ 
+class Vehicle (ABC):
+    @abstractmethod
+    def start_engine(self):
+        pass
+
+# derived class 1
+class Car(Vehicle):
+    def start_engine(self):
+        return "Car engine started"
+
+# derived class 2
+class Motercycle(Vehicle):
+    def start_engine(self):
+        return "Motercycle engine started"       
+    
+vehicle=[Car(),Motercycle()]
+for x in vehicle:
+    print(x.start_engine())
+
+# Car engine started
+# Motercycle engine started    

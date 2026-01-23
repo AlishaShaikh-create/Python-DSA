@@ -57,5 +57,6 @@ dog=Dog("Buddy", "Alisha")
 print(dog.speak())
 
 print(f"owner is {dog.owner}")      
-           
-        
+
+
+Animal.mro()       
