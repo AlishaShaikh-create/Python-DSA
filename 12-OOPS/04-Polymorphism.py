@@ -31,3 +31,36 @@ print(dog.speak()) # wooff
 print(cat.speak()) # Meow
 
 animal_speak(dog) # wooff
+
+# ## Polymorphism with functions and method
+
+#base class
+class Shape:
+    def area(self):
+        return "The area of the figure"
+
+# derived class 1
+class Rectangle(Shape):
+    def __init__(self,width,hight):
+        self.width=width
+        self.heigth=hight
+    def area(self):
+        return self.width*self.heigth
+    
+# Derived class 2
+class Circle(Shape):
+    def __init__(self,rad):
+        self.rad=rad
+    def area(self):
+        return 3.14*self.rad*self.rad
+
+# Function that demonstrate the polymorphism
+
+def print_area(obj):
+    print(f"The area is the {obj.area()}")               
+
+rectangle=Rectangle(3,4)        
+circle=Circle(3)
+
+print_area(rectangle)
+print_area(circle)
