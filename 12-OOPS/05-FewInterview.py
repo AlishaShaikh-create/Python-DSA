@@ -377,3 +377,8 @@ print(A.mro()) # output :[<class '__main__.A'>, <class 'object'>]
 
 # Composition : a class is used in the other class 
 # -> it is HAS A RELATIONSHIP
+
+
+# every class in python implicitly ihnerited from the object class 
+
+# Object class is the base class for all the class
