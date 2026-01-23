@@ -46,3 +46,55 @@ class Employee(Person):
 e=Employee("Alsha",22)
 print(e._name)
         
+        
+
+# Encapsulation with the getter and setter method
+
+class Person:
+    def __init__(self,name,age):
+        self.__name=name
+        self.__age=age
+        
+    # getter method for name
+    # -> with the getter method we retrieve the data
+    def get_name(self):
+        return self.__name
+    
+    # setter method for name
+    # -> with the help of the setter method we set the value to the data 
+    def set_name(self,name):
+        self.__name=name
+    
+    # getter method
+    def get_age(self):
+        return self.__age
+    
+    # setter method
+    def set_age(self,age):
+        if age>0:
+            self.__age=age
+        else :
+            print("age cannot be less than zero") 
+
+
+p=Person("Ruby", 90)
+
+## Access and modify private varible using the getter and setter
+
+print(p.get_name())  # Ruby      
+print(p.get_age())   # 90
+
+p.set_age(24)     
+print(p.get_age())   # 24
+
+
+p.set_age(-2)
+print(p.get_age()) 
+
+# output : 
+# age cannot be less than zero 
+# 24
+# -> this is the reason why 24 is again getting printed
+# get_age() returns the current value of self.__age
+# Since the invalid update was rejected, self.__age is still 24
+# That’s why you see 24 printed again.
