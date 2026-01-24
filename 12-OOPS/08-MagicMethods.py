@@ -41,3 +41,50 @@ person=Person("Alisha",22)
 print(person) 
 # Output :Alisha,22 years old
 
+# Magic method for the arithmetic operator
+
+print(1+1)
+
+'''
+__add__(self,other):Adds two objects using the + operator
+__sub__(self,other):Subtracts two objects using the - operator
+__mul__(self,other):Multiplies two objects using the * operator
+__truediv__(self,other):Divides two objects using the / operator
+__eq__(self,other): Checks if two objects are equal using the == operator
+__lt__(self,other):Cheks if one objects is less than another using the < operator.
+__gt__
+'''
+class Vector:
+    def __init__(self,x,y):
+        self.x=x
+        self.y=y
+    def __add__(self,other): 
+        return Vector(self.x+other.x,self.y+other.y) 
+    
+    def __sub__(self,other):
+        return Vector(self.x-other.x , self.y-other.y) 
+    
+    def __mul__(self,other):
+        return Vector(self.x*other.x , self.y*other.y)  
+    
+    def __truediv__(self,other):
+        return Vector(self.x/other.x , self.y/other.y)  
+     
+    def __repr__(self):
+        return f"Vector({self.x},{self.y})"
+
+## create objects of the vector Class
+v1=Vector(2,3)    
+v2=Vector(4,5)    
+
+print(v1+v2)
+print(v1-v2)
+print(v1*v2)
+print(v1/v2)
+
+# output:
+# Vector(6,8)
+# Vector(-2,-2)
+# Vector(8,15)
+# Vector(0.5,0.6)
+
