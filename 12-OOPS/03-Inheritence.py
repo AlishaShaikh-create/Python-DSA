@@ -16,7 +16,7 @@ car1.drive()
 
 class Tesla(Car):
     def __init__(self, windows, doors, enginetype,is_selfdriving):
-        super().__init__(windows,doors,enginetype)
+        super().__init__(windows,doors,enginetype) # no need to mention the self keyword
         self.is_selfdriving=is_selfdriving
     def selfdriving(self):
         print(f"Tesla support self driving :{self.is_selfdriving}")
