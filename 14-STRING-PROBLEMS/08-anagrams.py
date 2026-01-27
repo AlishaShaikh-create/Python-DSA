@@ -48,4 +48,4 @@ def is_anagram(s, t):
         if char_count_s[i] != char_count_t[i]:
             return False  # If there is a mismatch in frequencies, return False
     
-    return True  #
+    return True  
