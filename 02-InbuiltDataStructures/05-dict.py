@@ -6,14 +6,14 @@ student={
     "name":"alisha",
     "rollnumber":12
 }
-print(student)
-print(type(student))
+print(student) # {'name': 'alisha', 'rollnumber': 12}
+print(type(student)) # <class 'dict'>
 
 # accessing the element using the dictionary
-print(student["name"])
+print(student["name"]) # alisha
 
 # to define the length of the dictionaries 
-print(len(student))
+print(len(student)) # 2
 
 student={
      "name":["alisha", "sana" , "noorein" , "neha"],
@@ -21,13 +21,14 @@ student={
     
 }
 
-print(student)
+print(student) 
+# {'name': ['alisha', 'sana', 'noorein', 'neha'], 'rollnumber': 12}
 
 
 # using the dict() to create the dictionary
 
 thisdict=dict(name="Alisha" , age=23)
-print(thisdict)
+print(thisdict) # {'name': 'Alisha', 'age': 23}
 
 # Accessing the element of the dictionary
 thisdict = {
@@ -37,46 +38,50 @@ thisdict = {
 }
 
 b=thisdict['brand']
-print(b)
+print(b) # Ford
 
 # get() also get the similar result of the above code
 c=thisdict.get('brand')
-print(c)
+print(c) # Ford
+
 
 # to get the list of all the keys we use the keys()
 d=thisdict.keys()
-print(d)
+print(d) # dict_keys(['brand', 'model', 'year'])
 
 #Adding the element in the dictionary
 thisdict['color']= 'white'
 print(thisdict)
-print(thisdict.keys())
+print(thisdict.keys()) # dict_keys(['brand', 'model', 'year', 'color'])
 
 # printing the values 
 value=thisdict.values()
-print(value)
+print(value) # dict_values(['Ford', 'Mustang', 1964, 'white'])
 
 # to get the items in the list 
-print(thisdict.items())
+print(thisdict.items()) # dict_items([('brand', 'Ford'), ('model', 'Mustang'), ('year', 1964), ('color', 'white')])
 
 # to check if the key exist
 if 'model' in thisdict:
     print('exist')
-    
+# output : exist  
+  
 # changing the value 
 
 thisdict["year"]=2025
-print(thisdict)    
+print(thisdict) # {'brand': 'Ford', 'model': 'Mustang', 'year': 2025, 'color': 'white'}   
 
 # Remove the items from dict
 # 1 .pop()
 thisdict.pop('year')
-print(thisdict)
-# 2 popitem()
+print(thisdict) # {'brand': 'Ford', 'model': 'Mustang', 'color': 'white'}
 
+
+# 2 popitem()
 # remove the last items 
 thisdict.popitem()
 print(thisdict)
+# {'brand': 'Ford', 'model': 'Mustang'}
 
 #3. to delete the dictionary
 # del thisdict
