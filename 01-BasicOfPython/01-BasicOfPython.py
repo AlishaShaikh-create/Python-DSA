@@ -110,3 +110,17 @@ def name():
 
 name()
 # print(b)  //NameError: print the error that the b is not defined
+
+# NOTE:
+# Everything that you create in python is in terms of class and object and the actual value of the object is stored in "HEAP"   and their reference is strored in "STACK"  
+
+
+# Binary type of data 
+# bytes , bytearray, memoryview
+
+# -> bytes are immutable(cannot be changed after the creation)
+# -> bytearray are mutable
+# -> memory view depends
+
+b=b"hello"
+print(b)
