@@ -99,9 +99,19 @@ thisdict = {
 # to print the keys
 for x in thisdict:
   print(x)
+  
+# output : 
+# brand
+# model
+# year  
 
 # to print the value
 for i in thisdict:
-  print(thisdict[i])  
+  print(thisdict[i]) 
+  
+# output:
+# Ford
+# Mustang
+# 1964   
   
  # the value of the dictionary 
