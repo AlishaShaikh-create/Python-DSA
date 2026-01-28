@@ -51,6 +51,9 @@ print(string.strip())
 print(string.replace("Alisha" , "Tohid"))
 print(string.split(','))
 
+s="alisha"
+y=s.upper()
+print("The value of y is", y)
 
 #format string or the f-string
 
