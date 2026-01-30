@@ -1,5 +1,5 @@
 #CUSTOM EXCEPTION
-class Error(Exception): #generic class
+class Error(Exception): # generic class
     pass
 
 class dobException(Error):

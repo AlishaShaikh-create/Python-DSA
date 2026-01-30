@@ -60,3 +60,88 @@ print(f"owner is {dog.owner}")
 
 
 Animal.mro()       
+
+# Multiple inheritence
+class Employee:
+    def __init__(self,name):
+        self.name=name
+
+
+class JobSalary:
+    def __init__(self,salary):
+        self.salary=salary
+        
+
+class EmployeeDetails(Employee,JobSalary):
+    def __init__(self,name,salary):
+        Employee.__init__(self,name)
+        JobSalary.__init__(self,salary)
+        
+    def printDetails(self):
+        return f"The Employee name is {self.name} and her salary is {self.salary}"
+
+
+em=EmployeeDetails("Alisha", "1cr")   
+print(em.name)     
+print(em.salary)
+print(em.printDetails())          
+
+            
+# Multilevel Inheritence : one class derived from the other derived class
+class Person:
+    def __init__(self,name):
+        self.name=name
+    
+      
+
+class Employee(Person):
+      def printName(self):
+        return f" name = {self.name}"
+
+class Manager(Employee):
+    def manager(self,dept):
+        return f" The employee name is {self.name} and his dept is {dept}"
+    
+mr=Manager("JOY")
+print(mr.manager("HR"))   
+print(mr.printName())     #  name = JOY   
+
+
+
+
+
+# Hierarchical Inheritance :multiple classes inherit from the same parent class
+
+class Person:
+    def __init__(self, name):
+        self.name = name
+        
+    def printName(self):
+        return f"name = {self.name}"
+    
+   
+class Salary(Person):
+    def __init__(self, name, salary):
+        super().__init__(name)
+        self.salary = salary
+
+    def showSalary(self):
+        return f"Salary = {self.salary}"
+        
+        
+class Employee(Person):
+    def __init__(self, name, emp_id):
+        super().__init__(name)
+        self.emp_id = emp_id
+
+    def info(self):
+        return f"name = {self.name}, employee id = {self.emp_id}"
+
+em=Employee("Alisha","12")
+print(em.info()) # name = Alisha, employee id = 12                
+print(em.printName()) # name = Alisha
+
+s=Salary("Alisha","1cr")
+print(s.showSalary()) # Salary = 1cr
+
+    
