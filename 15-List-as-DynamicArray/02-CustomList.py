@@ -72,9 +72,43 @@ class CustomList:
         if self.size==0:
             return 'Empty list'
         poped_itme=self.array[self.size-1]
+        
+        #Even if the memory size is reduced it still holds the address
+        # array = [10, 20, 30, None]  ❌ still there
+        
+        # this is done through garbage collection
+        
+        self.array[self.size-1]=None
         self.size=self.size-1
         return poped_itme
+    
+    def __getitem__(self,index):
+        if (index>=0 and index < self.size ):
+            return self.array[index]
+        else: 
+            raise IndexError("Index out of bound error")
+    
+    def clear(self):
+        self.size=0
+    
+    def insert(self,position,element): 
+        if self.size==self.capacity:
+            self.__resize(2*self.capacity) 
         
+        for index in range(self.size,position,-1):
+            self.array[index]=self.array[index-1]
+        
+        self.array[position]=element   
+        self.size+=1
+            
+         
+         
+    def 
+          
+           
+               
+    
+    
     
       
         
@@ -95,7 +129,25 @@ print(myList) #[]
 print(myList.pop()) #Empty list
 print(myList) #[]
 
+myList.append1(1)
+myList.append1(2)
 
+
+print(myList) #[1,2]
+print(myList[0]) # 1
+# print(myList[10])  # raises the error
+
+myList.clear()
+print(myList)
+
+myList.append1(1)
+myList.append1(2)
+myList.append1(3)
+myList.append1(4)
+print(myList)
+
+myList.insert(2,350)
+print(myList)
 # s="python"
 # print(s[:-1])
 
