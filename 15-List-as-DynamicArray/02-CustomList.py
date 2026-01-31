@@ -91,6 +91,7 @@ class CustomList:
     def clear(self):
         self.size=0
     
+    
     def insert(self,position,element): 
         if self.size==self.capacity:
             self.__resize(2*self.capacity) 
@@ -103,7 +104,12 @@ class CustomList:
             
          
          
-    def 
+    def remove(self,element):
+        for i in range(self.size,element,-1):
+            self.array[i-1]=self.array[i]
+            
+         self.size-=1   
+        
           
            
                
