@@ -66,27 +66,48 @@ class CustomList:
         output=""
         for i in range(self.size):
             output = output + str(self.array[i])+','
-        return '['+output[:-1]+']'    
+        return '['+output[:-1]+']'  
+    
+    def pop(self):
+        if self.size==0:
+            return 'Empty list'
+        poped_itme=self.array[self.size-1]
+        self.size=self.size-1
+        return poped_itme
+        
+    
+      
         
         
 
 myList=CustomList()
 myList.append1(1)
 myList.append1(2)
-print(len(myList))
+print(len(myList))  # 2
+print(myList) #[1,2]
 
-s="python"
-print(s[:-1])
+print(myList.pop()) #2
+print(myList) #[1]
+
+print(myList.pop()) #1
+print(myList) #[]
+
+print(myList.pop()) #Empty list
+print(myList) #[]
 
 
-x=10
-arrayType=ctypes.py_object(x)
-print(x)
+# s="python"
+# print(s[:-1])
+
+
+# x=10
+# arrayType=ctypes.py_object(x)
+# print(x)
 
 # ctypes.py_object represents a C-type that can hold a reference to a Python object
 # 3 * ctypes.py_object creates an array TYPE (blueprint), but does not allocate memory
 # () instantiates the array type and allocates memory
 # (3 * ctypes.py_object)() creates an actual array object and allocates memory
 
-A = (3 * ctypes.py_object)()
-print(A)
+# A = (3 * ctypes.py_object)()
+# print(A)
