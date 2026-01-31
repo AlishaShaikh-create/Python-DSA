@@ -65,7 +65,7 @@ class CustomList:
     def __str__(self):
         output=""
         for i in range(self.size):
-            output = output +str(self.array[i])+','
+            output = output + str(self.array[i])+','
         return '['+output[:-1]+']'    
         
         
@@ -74,6 +74,9 @@ myList=CustomList()
 myList.append1(1)
 myList.append1(2)
 print(len(myList))
+
+s="python"
+print(s[:-1])
 
 
 x=10
