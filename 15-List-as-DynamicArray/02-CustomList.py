@@ -104,11 +104,12 @@ class CustomList:
             
          
          
-    def remove(self,element):
-        for i in range(self.size,element,-1):
-            self.array[i-1]=self.array[i]
+    # def remove(self,element):
+    #     for i in range(self.size,element,-1):
+    #         self.array[i-1]=self.array[i]
             
-         self.size-=1   
+    #      self.size-=1     
+         
         
           
            
