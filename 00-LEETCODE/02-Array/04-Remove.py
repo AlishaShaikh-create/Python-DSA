@@ -9,9 +9,10 @@ def remove(nums,val):
            i+=1    
    return len(nums)        
 
-
 print(remove( [ 3,2,2,3],2))
 
+  
+  
    
 # Two pointers approach
 
