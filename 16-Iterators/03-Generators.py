@@ -65,4 +65,3 @@ file_path='large_file.txt'
 for line in read_large_file(file_path):
     print(line.strip())
     
-           
