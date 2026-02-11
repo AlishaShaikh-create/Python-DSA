@@ -47,4 +47,29 @@ PrintNumFive(5)
 # 1. We can call a function inside the another function
 # 2.A Function stays in the memory until it  gets fully Excuted
 
-# most importantly  we are doing the similar kind of work in each of the following function        
+# most importantly  we are doing the similar kind of work in each of the following function  
+
+def printNum(num):
+   
+        print(num)
+        return printNum(num-1)     
+
+# printNum(5) # Error : RecursionError: maximum recursion depth exceeded  
+
+# here it does not know the base condition where to stop 
+
+def printNum(num):
+    if num>=1:
+        print(num)
+        printNum(num-1)
+
+printNum(7)
+
+# output :
+# 7
+# 6
+# 5
+# 4
+# 3
+# 2
+# 1
