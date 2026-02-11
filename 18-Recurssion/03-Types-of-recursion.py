@@ -50,4 +50,16 @@ def sum(n , acc=0):
 print(sum(3))   
 # output:
 # 6
+
+# Non tail recursive function
+def sum(n):
+    if n==0:
+        return 0
+    else:
+        return n+sum(n-1)
+
+print(sum(3))   
+# output : 6 
+
+
         
