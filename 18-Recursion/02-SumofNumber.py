@@ -5,6 +5,7 @@ def Sum(n):
         return 1
     return n + Sum(n-1)
 
+
 print(Sum(5)) # output :15
 
 # Factorial of the number

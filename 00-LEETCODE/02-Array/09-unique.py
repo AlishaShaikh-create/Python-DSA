@@ -36,3 +36,4 @@ print(unique(nums))
 # 1. XOR of a number with itself is 0 (a ^ a = 0 , any number XOR with itself is zero)
 # 2 . XOR of a number with 0 is the number itself (a ^ 0 = a),any number XOR with zero is the number itself
 # 3 . XOR is commutative and associative (order doesn't matter)        
+

@@ -61,5 +61,10 @@ def sum(n):
 print(sum(3))   
 # output : 6 
 
+# Tail is more preferabel than non tail
 
+def factorial(n):
+    if n==0:
+        return 0
+    
         
