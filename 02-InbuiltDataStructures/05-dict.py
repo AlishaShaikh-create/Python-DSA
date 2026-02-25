@@ -72,7 +72,7 @@ thisdict["year"]=2025
 print(thisdict) # {'brand': 'Ford', 'model': 'Mustang', 'year': 2025, 'color': 'white'}   
 
 # Remove the items from dict
-# 1 .pop()
+# 1 .pop()  # to remove the particular key 
 thisdict.pop('year')
 print(thisdict) # {'brand': 'Ford', 'model': 'Mustang', 'color': 'white'}
 
@@ -114,4 +114,14 @@ for i in thisdict:
 # Mustang
 # 1964   
   
- # the value of the dictionary 
+# to print the keys and values in the dictionary
+
+for keys,values in thisdict.items():
+  print(keys,values)
+
+for keys in thisdict.keys():
+  print(keys)
+
+for values in thisdict.values():
+  print(values)    
+  
