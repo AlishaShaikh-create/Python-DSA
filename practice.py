@@ -1,11 +1,9 @@
-nums=[2, 3, 4, 5, 6]
-first =nums[0]
-last= nums[len(nums)-1]
-result=first+last
-print(result)
+def printNumber(x,n):
+    for i in range(n):
+        print(x,end='')
+        
+        if i < n-1:
+            print(" ", end='')
+    print()
+printNumber(7,4)
 
-s="lovecoding"
-result=len(s)-1
-print(s[-1])
-print(result)
-print(s[result])
