@@ -84,5 +84,8 @@ print(second_largest(lst))
 
 lst=[1,1,1,1]
 print(second_largest(lst))         
-               
+
+
+# mejority  element
+
     
