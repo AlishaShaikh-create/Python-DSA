@@ -69,12 +69,20 @@ print(count_even_odd(lst))
 def second_largest(lst):
     largest=lst[0]
     second_largest=lst[1]
-    for i in range(len(lst)):
-        if largest<lst[i]:
-            largest=lst[i]
-        else:
-                
-         
+    for num in lst:
+        if num>largest:
+            second_largest=largest
+            largest=num
+        elif num>second_largest and num!=largest:
+            second_largest=num
     
+    return second_largest
+
+            
+lst=[1, 2, 3, 4, 5, 6]
+print(second_largest(lst))              
+
+lst=[1,1,1,1]
+print(second_largest(lst))         
                
     
