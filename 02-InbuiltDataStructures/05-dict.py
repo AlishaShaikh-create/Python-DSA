@@ -124,4 +124,7 @@ for keys in thisdict.keys():
 
 for values in thisdict.values():
   print(values)    
+
+
+# If the key is not present You get the Keye  
   

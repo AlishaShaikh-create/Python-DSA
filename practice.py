@@ -1,9 +1,9 @@
-def printNumber(x,n):
-    for i in range(n):
-        print(x,end='')
-        
-        if i < n-1:
-            print(" ", end='')
-    print()
-printNumber(7,4)
+student={
+    "name":"Tohid",
+    "age":20,
+    "College":" NIT",
+    1:23
+}
+
+print(student.get("height")) 
 
