@@ -71,3 +71,14 @@ print(all(arr)) #False
 arr=[1,2,1,4,5]
 print(arr.count(1)) # 2
 
+arr=[5,6,1,3]
+# Enumerate : to get the value in terms of (index,value)
+
+print(list(enumerate(arr))) #[(0, 5), (1, 6), (2, 1), (3, 3)]
+
+for i ,value in list(enumerate(arr)):
+    print(i ,value)
+    
+    
+arr=list(range(2,5))
+print(arr)    
