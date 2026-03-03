@@ -11,6 +11,8 @@ def remove(nums,val):
 
 print(remove( [ 3,2,2,3],2))
 
+
+
   
   
    
@@ -25,3 +27,17 @@ def removeElement(nums,val) :
                 nums[write]=nums[read]
                 write+=1
         return write           
+    
+
+def duplicate(arr):
+    value=0
+    dict={}
+    for i in range(len(arr)):
+        if arr[i] not in dict:
+            dict[arr[i]]=value
+        else:
+            return False
+    return True
+
+nums = [1,2,3]
+print(duplicate(nums))
