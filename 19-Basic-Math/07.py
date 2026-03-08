@@ -15,4 +15,5 @@ def isArmstrong(n):
  
 print(isArmstrong(153))        
 print(isArmstrong(3))        
-            
+   
+# time complexity is O (log n)            
