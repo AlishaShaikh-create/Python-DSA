@@ -23,7 +23,9 @@ val=0
 #     if value>val:
 #         val=value
 #         result[]
-    
+
+s = ["h", "e" ,"l" ,"l" ,"o"]
+print(s[::-1]) 
         
     
     
