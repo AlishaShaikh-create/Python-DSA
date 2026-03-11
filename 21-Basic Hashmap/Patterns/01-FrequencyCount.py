@@ -19,10 +19,10 @@ for n in nums:
 print(hashmap)
 result=[]*2
 val=0
-for key,value in hashmap:
-    if value>val:
-        val=value
-        result[]
+# for key,value in hashmap:
+#     if value>val:
+#         val=value
+#         result[]
     
         
     
