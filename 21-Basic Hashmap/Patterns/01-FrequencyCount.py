@@ -7,3 +7,24 @@ for num in nums:
     else:
         freq[num]+=count
 print(freq)            
+
+
+hashmap={}
+count=1
+for n in nums:
+    if n not in hashmap:
+        hashmap[n]=count
+    else:
+        hashmap[n]+=count
+print(hashmap)
+result=[]*2
+val=0
+for key,value in hashmap:
+    if value>val:
+        val=value
+        result[]
+    
+        
+    
+    
+    
