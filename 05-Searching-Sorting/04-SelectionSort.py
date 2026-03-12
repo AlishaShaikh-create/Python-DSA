@@ -40,4 +40,5 @@ arr=[12,25,11,34,90,22]
 print(Selection_sort(arr) )                   
         
     
-    
+         
+            
