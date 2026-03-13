@@ -12,4 +12,4 @@ def insertion_sort(arr):
 
 arr=[12,25,11,34,90,22]
 print(insertion_sort(arr) )          
-
+print(insertion_sort(arr))
