@@ -39,18 +39,5 @@ def Selection_sort(arr):
 arr=[12,25,11,34,90,22]
 print(Selection_sort(arr) )                   
         
-def SelectionSort(arr):
-    n=len(arr)
-    for i in range(n):
-        min_index=i
-        for j in range(i,n):
-            min_index=j
-        temp=arr[i]
-        arr[i]=arr[min_index]
-        arr[min_index]=temp
-    return arr
-            
-arr=[12,25,11,34,90,22]
-print(Selection_sort(arr) )                   
-                 
+             
             
