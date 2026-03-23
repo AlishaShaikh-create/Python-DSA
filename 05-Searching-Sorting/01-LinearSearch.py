@@ -12,5 +12,11 @@ def linear_search(l1, target):
 
 print(linear_search(l1,70)  ) 
 print(linear_search(l1,700)  ) 
-
+        
+        
+            
+            
+            
+        
+        
 
