@@ -1,54 +1,45 @@
-# arr = [1,2,3,-2,2]
-# count=0
-# k=3
-# for i in range(len(arr)):
-#     sum=0
-#     for j in range(i,len(arr)):
-#         sum+=arr[j]
-#         if sum == k:
-#           count+=1
-# print(count)        
-
-
-# arr = [1,2,3,-2,2]
-arr=[2,3,-5,5,-5,1,4]
-k=5
-hashmap={0:1}
-sum = 0
-count =0
-for num in arr:
-    sum+=num
-    if sum-k in hashmap:
-        count +=hashmap[sum-k]
-           
+def spiralMatrix(mat):
+    if not mat or not mat[0]:
+        return []
     
-    if sum in hashmap:
-        hashmap[sum] += 1
-    else:
-        hashmap[sum] = 1
-
-
-print(count)        
-  
+    n = len(mat)
+    m = len(mat[0])
+    
+    ans = []
+    top, left = 0, 0
+    bottom, right = n - 1, m - 1
+    
+    while top <= bottom and left <= right:
         
-
-arr = [1,2,3,3,3,3,4,5]    
-h ={}
-for ele 
-
-
-    
-    
+        # Left → Right
+        for i in range(left, right + 1):
+            ans.append(mat[top][i])
+        top += 1
         
-       
+        # Top → Bottom
+        for i in range(top, bottom + 1):
+            ans.append(mat[i][right])
+        right -= 1
         
-    
-    
-    
+        # Right → Left ✅ FIXED
+        if top <= bottom:
+            for i in range(right, left - 1, -1):
+                ans.append(mat[bottom][i])
+            bottom -= 1
         
-         
+        # Bottom → Top ✅ FIXED
+        if left <= right:
+            for i in range(bottom, top - 1, -1):
+                ans.append(mat[i][left])
+            left += 1
             
-            
-            
-            
-    
+    return ans
+
+mat = [
+        [1, 2, 3, 4],
+        [5, 6, 7, 8],
+        [9, 10, 11, 12],
+        [13, 14, 15, 16]
+    ]
+
+print(spiralMatrix(mat))
