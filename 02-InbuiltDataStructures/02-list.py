@@ -71,7 +71,7 @@ a.remove(20)
 print(a)
 
 # removing the element using the iterators
-print("Removing the element form the list using the remove()")
+print("Removing the element from the list using the remove()")
 for i in a[:]:
     a.remove(i)
     print(a)

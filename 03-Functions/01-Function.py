@@ -51,3 +51,5 @@ def multiply(a,b):
     return a*b,a
 
 print(multiply(2,3))
+
+# NOTE : the kwargs must always come after the args
