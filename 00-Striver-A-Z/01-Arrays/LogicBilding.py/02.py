@@ -35,5 +35,28 @@ def Majority_Element(nums):
 nums = [7, 0, 0, 1, 7, 7, 2, 7, 7]   
 print(Majority_Element(nums))  
 
+leader =[]
+leader.append(nums[-1])
+print(leader)
 
 
+def rearrangeArray( nums):
+        positive = []
+        negative = []
+        res = []
+        for i in range(len(nums)):
+            if nums[i] < 0:
+                negative.append(nums[i])
+            else :
+                positive.append(nums[i])
+        i = 0
+        j = 0
+        while i < len(nums)-1 and j < len(nums)-1:
+            res.append(positive[i])
+            res.append(negative[j])
+            i+=1
+            j+=1
+        return res
+
+nums = [2, 4, 5, -1, -3, -4]
+print(rearrangeArray(nums))
