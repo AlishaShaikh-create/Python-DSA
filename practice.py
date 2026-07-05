@@ -99,6 +99,13 @@ student2.skill.append("java")
 print(student2.skill)
 print(student1.skill)
 
-    
+class Student :
+    def __init__(self , name ):
+        self.name = name 
+    def print_name(self):
+        print("hello",self.name)
+
+s1 = Student("Alisha")
+s1.print_name()
             
         
