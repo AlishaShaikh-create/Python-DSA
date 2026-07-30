@@ -61,4 +61,19 @@ nums = [7, 15, 6, 3]
 h = 8
 print(koko_eating_banana(nums,h))
 
+def minimum_days_mbouque(n,nums,k,m ):
+    low = min(nums)
+    high = max(nums)  # the maximum value of the array because after this the sum never changes 
+    ans = high
+    while low <= high:
+        mid = (low + high) // 2
+        days = 0
+        for num in nums:
+            days += math.ceil(num/k)
+        if days <= m :
+            ans = mid 
+            high = mid -1 
+        else :
+            low = mid + 1
+    return ans
 
