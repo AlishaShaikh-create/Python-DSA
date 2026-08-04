@@ -6,7 +6,7 @@ for i in range(1, len(nums)):
     prefix[i] = prefix[i - 1] + nums[i]
 print(prefix)    
 
-# Finding the Pivot : 724 ( My Solution)
+# Finding the Pivot :  leetcode - 724 ( My Solution)
 def Finding_the_pivot(nums):
     prefix_left =[]
     prefix_right = []
@@ -77,6 +77,7 @@ def SubArray(nums , k):
             
             count+= hashmap[needed]
         hashmap[current_sum] = hashmap.get(current_sum,0)+1  
+    print(hashmap)
     return count
 
 nums=[1,2,3]
@@ -102,3 +103,23 @@ k = 6
 print(SubArray(nums,k))
 
 
+
+
+
+
+def SubArraySum(nums , k):
+    hashmap = {0:1}
+    count = 0
+    current_sum = 0
+    for num in nums:
+        current_sum += num
+        needed = current_sum - k 
+        if needed in hashmap:
+            
+            count+= hashmap[needed]
+        hashmap[current_sum] = hashmap.get(current_sum,0)+1  
+    print(hashmap)
+    return count
+
+nums=[1,2,3]
+print(subArraySum(nums,3))  
