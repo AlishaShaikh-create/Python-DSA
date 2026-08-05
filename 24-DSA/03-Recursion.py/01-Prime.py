@@ -10,3 +10,4 @@ def Prime(n):
 print(Prime(7))
 print(Prime(17))
 print(Prime(18))
+print(Prime(5))
