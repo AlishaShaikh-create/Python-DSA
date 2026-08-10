@@ -1,11 +1,14 @@
 # binary search
 # lower bound
 # upper bound 
+# Counting the element 
+# first and last Occurance
 # -----------------------------------
 # First Occurance 
 # last Occurance 
 # floor
 # ceil
+# 
 
 
 def first_Occurance(nums, target):
