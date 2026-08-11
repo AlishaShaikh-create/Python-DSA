@@ -52,3 +52,6 @@ nums = [4, 5, 6, 7, 0, 1, 2]
 print(minimum(nums))
 nums = [11, 13, 15, 17]
 print(minimum(nums))
+
+
+
